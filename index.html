@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="hero">
+        <header>
+
+            <!-- mobile navigation -->
+
+            <button class="mobile-menu-open-btn active" id="mobile-menu-open-btn"><img
+                    src="./img/svg/hamburger-menu-svgrepo-com.svg" alt="mobile-ham-menu-icon" height="40"></button>
+
+            <div class="mobile-nav-menu inactive">
+                <button class="mobile-menu-close-btn" type="button"><img src="./img/svg/close-svgrepo-com.svg"
+                        alt="close-menu-icon" height="30"></button>
+
+                <!-- search bar -->
+                <div class="search-bar-container">
+                    <input class="search-text-container" type="text" placeholder="Search">
+                    <button class="search-bar-icon"><img src="./img/svg/search-svgrepo-com.svg" alt="search-icon"
+                            height="25"></button>
+                </div>
+
+                <div class="nav-links-grid">
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Favorite</a>
+
+                    <a href="#">Shop</a>
+                    <a href="#">Account</a>
+
+                    <a href="#">About</a>
+                    <a href="#">Cart</a>
+
+                    <a href="#">Blog</a>
+                </div>
+
+            </div>
+
+            <!-- desktop navigation -->
+            <nav class="desktop-nav">
+                <a href=""><span class="link-arrow"><img src="./img/svg/arrow-up-right-thin-svgrepo-com.svg"
+                            alt="arrow up right svg" height="13px"></span>
+                    New Arrivals</a>
+                <a href=""><span class="link-arrow"><img src="./img/svg/arrow-up-right-thin-svgrepo-com.svg"
+                            alt="arrow up right svg" height="13px"></span> Shops</a>
+                <a href=""><span class="link-arrow"><img src="./img/svg/arrow-up-right-thin-svgrepo-com.svg"
+                            alt="arrow up right svg" height="13px"></span> About</a>
+                <a href=""><span class="link-arrow"><img src="./img/svg/arrow-up-right-thin-svgrepo-com.svg"
+                            alt="arrow up right svg" height="13px"></span> Blog</a>
+            </nav>
+
+            <div class="brand-logo">
+                <a href=""><img src="./img/hero/Logo-copy.png" alt="Aster-Logo" height="25"></a>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href=""><img src="./img/svg/search-svgrepo-com.svg" alt="search-icon-svg" height="20px">
+                    <p>Search</p>
+                </a>
+                <a href=""><img src="./img/svg/heart-alt-svgrepo-com.svg" alt="Favorite-heart-svg" height="20px">
+                    <p>Favorite</p>
+                </a>
+                <a href=""><img src="./img/svg/account-avatar-head-svgrepo-com.svg" alt="account-svg" height="20px">
+                    <p>Account</p>
+                </a>
+                <a href="">
+                    <img src="./img/svg/cart-large-minimalistic-svgrepo-com.svg" alt="cart-svg" height="20px">
+                    <p>Cart</p>
+                </a>
+            </nav>
+        </header>
+
+        <!-- Main content -->
+
+        <header class="hero-header">
+
+            <h1 class="hero-title">
+                <span class="hero-text-fade delay-1">Elegant.</span>
+                <span class="hero-text-fade delay-2">Effortless.</span>
+                <span class="hero-text-fade delay-3">Timeless.</span>
+                <span class="hero-text-fade delay-4">Serene.</span>
+            </h1>
+
+            <div class="hero-image hero-text-fade" style="animation-delay: 0.8s;">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                    alt="Aster Editorial Campaign" class="hero-image-img">
+            </div>
+
+            <div class="hero-content hero-text-fade" style="animation-delay: 1.2s;">
+                <p class="hero-description">
+                    Curated essentials for the modern woman. Discover pieces designed to
+                    transcend seasons and trends.
+                </p>
+
+                <a href="#collection" class="hero-button">
+                    Explore Collection
+                </a>
+            </div>
+        </header>
+    </section>
+
+
+
+
+    <!-- New Arrivals -->
+
+    <section id="collection" class="collection">
+
+        <div class="collection-container">
+
+            <div class="collection-header">
+                <h2 class="collection-title">New Arrivals</h2>
+
+                <a href="#" class="collection-link nav-link">
+                    View All
+                </a>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img src="./img/newArrivals/Girl01.jpeg"
+                            alt="Ribbed Off-Shoulder Top & Tailored Wide-Leg Trousers" class="product-image">
+
+                        <div class="quick-add-wrapper">
+                            <button class="quick-add-btn">
+                                Quick Add
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Ribbed Off-Shoulder Top & Tailored Wide-Leg Trousers
+                        </h3>
+
+                        <p class="product-price">
+                            9499 LKR
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img src="./img/newArrivals/Girl02.jpeg" alt="Graphic Ringer Crop Tee & Utility Cargo Pants"
+                            class="product-image">
+
+                        <div class="quick-add-wrapper">
+                            <button class="quick-add-btn">
+                                Quick Add
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Graphic Ringer Crop Tee & Utility Cargo Pants
+                        </h3>
+
+                        <p class="product-price">
+                            9999 LKR
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img src="./img/newArrivals/Girl03.jpeg" alt="High-Neck Knit Sweater & Relaxed-Fit Trousers"
+                            class="product-image">
+
+                        <div class="quick-add-wrapper">
+                            <button class="quick-add-btn">
+                                Quick Add
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            High-Neck Knit Sweater & Relaxed-Fit Trousers
+                        </h3>
+
+                        <p class="product-price">
+                            7999 LKR
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img src="./img/newArrivals/Girl04.jpeg" alt="Cotton Camisole & Distressed Wide-Leg Jeans"
+                            class="product-image">
+
+                        <div class="quick-add-wrapper">
+                            <button class="quick-add-btn">
+                                Quick Add
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Cotton Camisole & Distressed Wide-Leg Jeans
+                        </h3>
+
+                        <p class="product-price">
+                            10 999 LKR
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About us section -->
+
+    <section class="about">
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="./img/about/Girl04copy.jpeg" alt="Brand Editorial">
+            </div>
+
+            <div class="about-content">
+
+                <span class="about-subtitle">
+                    Our about
+                </span>
+
+                <h2 class="about-title">
+                    Less, but better.
+                </h2>
+
+                <p class="about-text">
+                    We believe in the power of simplicity. Aster was born from a desire to create a wardrobe of
+                    essential pieces that you'll reach for time and time again. We prioritize sustainable fabrics,
+                    ethical manufacturing, and timeless silhouettes over fleeting trends.
+                </p>
+
+                <a href="#" class="about-link">
+                    Read Our Story
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Blog section -->
+
+    <section class="Blog">
+
+        <div class="Blog-container">
+
+            <div class="Blog-header">
+
+                <div class="Blog-heading">
+                    <h2 class="Blog-title">The Journal</h2>
+                    <p class="Blog-subtitle">
+                        Style notes, studio visits, and inspiration.
+                    </p>
+                </div>
+
+                <a href="#" class="Blog-link nav-link">
+                    Read All Entries
+                </a>
+
+            </div>
+
+            <div class="Blog-grid">
+
+                <!-- Article 1 -->
+                <article class="Blog-card">
+
+                    <div class="Blog-image">
+                        <img src="./img/blog/02.jpeg" alt="Fabric details">
+                    </div>
+
+                    <div class="Blog-meta">
+
+                        <span class="Blog-category">
+                            Materials
+                        </span>
+
+                        <span class="Blog-dot"></span>
+
+                        <span class="Blog-date">
+                            June 24, 2026
+                        </span>
+
+                    </div>
+
+                    <h3 class="Blog-card-title">
+                        The Art of Linen
+                    </h3>
+
+                    <p class="Blog-description">
+                        Exploring the origins of our favorite summer fabric, its sustainable properties, and the best
+                        ways
+                        to care for it season after season.
+                    </p>
+
+                    <a href="#" class="Blog-read-more">
+                        Read Story
+                    </a>
+
+                </article>
+
+                <!-- Article 2 -->
+                <article class="Blog-card">
+
+                    <div class="Blog-image">
+                        <img src="./img/blog/01.jpeg" alt="Editorial styling">
+                    </div>
+
+                    <div class="Blog-meta">
+
+                        <span class="Blog-category">
+                            Style Guide
+                        </span>
+
+                        <span class="Blog-dot"></span>
+
+                        <span class="Blog-date">
+                            June 18, 2026
+                        </span>
+
+                    </div>
+
+                    <h3 class="Blog-card-title">
+                        Transitioning Silhouettes
+                    </h3>
+
+                    <p class="Blog-description">
+                        How to take your capsule wardrobe from the cool breeze of early spring into the warmth of high
+                        summer with effortless layering.
+                    </p>
+
+                    <a href="#" class="Blog-read-more">
+                        Read Story
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+
+    <!-- Instergram section -->
+
+    <section class="instagram">
+
+        <div class="instagram-header">
+            <a href="#" class="instagram-link">
+                @AsterClothing
+            </a>
+        </div>
+
+        <div class="instagram-grid">
+
+            <div class="instagram-item">
+
+                <img src="./img/insta/Girl01.jpeg" alt="Instagram Post 1">
+
+                <div class="instagram-hover-icon">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+
+                </div>
+
+            </div>
+
+            <div class="instagram-item">
+                <img src="./img/insta/Girl02.jpeg" alt="Instagram Post 2">
+                <div class="instagram-hover-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="instagram-item">
+                <img src="./img/newArrivals/Girl03.jpeg" alt="Instagram Post 3">
+                <div class="instagram-hover-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="instagram-item">
+                <img src="./img/insta/Girl04.jpeg" alt="Instagram Post 4">
+                <div class="instagram-hover-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <h2 class="footer-logo">Aster</h2>
+
+                    <p class="footer-description">
+                        Elevating everyday essentials for the modern woman. Designed
+                        with intention, made to last.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">Shop</h4>
+
+                    <ul class="footer-links">
+                        <li><a href="#">All Clothing</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Tops & Blouses</a></li>
+                        <li><a href="#">Outerwear</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">Information</h4>
+
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4 class="footer-heading">
+                        Join the List
+                    </h4>
+
+                    <p class="footer-newsletter-text">
+                        Subscribe for updates on new arrivals, exclusive promotions,
+                        and Blog entries.
+                    </p>
+
+                    <form class="footer-form">
+
+                        <input type="email" placeholder="Email Address" class="footer-input">
+
+                        <button type="submit" class="footer-button">
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Aster Clothing. All rights reserved.
+                </p>
+
+                <div class="footer-socials">
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">TikTok</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
