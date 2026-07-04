@@ -275,3 +275,481 @@ body.menu-open {
 
     margin-right: .75rem;
 }
+
+.contact-hero {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5rem 2rem 2rem;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-title-main {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.hero-text-fade,
+.contact-workspace-animation {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+.contact-subtitle-main {
+    color: #6b7280;
+    font-weight: 300;
+    font-size: 1.125rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Main Workspace Section */
+.contact-workspace {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 2rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+}
+
+/* Atelier Info Left Side */
+.atelier-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.atelier-block {
+    margin-bottom: 3.5rem;
+}
+
+/* Responsive ordering applies only at mobile widths */
+@media (max-width: 1023px) {
+    .contact-workspace>.atelier-info:nth-of-type(1) {
+        order: 1;
+    }
+
+    .contact-form-container {
+        order: 2;
+    }
+
+    .contact-workspace>.atelier-info:nth-of-type(2) {
+        order: 3;
+    }
+}
+
+.atelier-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #9ca3af;
+    margin-bottom: 1.25rem;
+}
+
+.atelier-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 1.85rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.atelier-detail-text {
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.atelier-detail-text strong {
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.atelier-detail-text a {
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 1px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.atelier-detail-text a:hover {
+    color: #6b7280;
+    border-color: #6b7280;
+}
+
+/* Map Placeholder Visual */
+.atelier-map-container {
+    width: 100%;
+    height: 24rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 2px;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    display: block;
+}
+
+.atelier-map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+.map-graphic-mock {
+    width: 100%;
+    height: 100%;
+    background: none;
+    opacity: 1;
+}
+
+.map-overlay-text {
+    display: none;
+}
+
+/* Minimalist Contact Form Block */
+.contact-form-container {
+    background-color: #fff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding: 0.5rem 0;
+    color: #1a1a1a;
+    outline: none;
+    transition: border-color 0.4s ease;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #1a1a1a;
+}
+
+.submit-btn {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 1rem 3rem;
+    border: 2px solid #1a1a1a;
+    background-color: #fff;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 5rem 2rem 2.5rem;
+}
+
+.footer-container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
+}
+
+.footer-description {
+    max-width: 18rem;
+    color: #9ca3af;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.footer-heading {
+    margin-bottom: 1.5rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 300;
+    transition: color .3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-newsletter-text {
+    margin-bottom: 1rem;
+    color: #9ca3af;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #4b5563;
+}
+
+.footer-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.footer-input::placeholder {
+    color: #6b7280;
+}
+
+.footer-button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    transition: color .3s;
+}
+
+.footer-button:hover {
+    color: #d1d5db;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid #1f2937;
+    color: #6b7280;
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-socials a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.footer-socials a:hover {
+    color: #fff;
+}
+
+@media (max-width: 1023px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .contact-workspace {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 0 1.5rem 5rem;
+    }
+
+    .contact-workspace>* {
+        width: 100%;
+    }
+
+    .atelier-info {
+        gap: 2rem;
+    }
+
+    .atelier-map-container {
+        height: 22rem;
+    }
+
+    .contact-form-container {
+        padding: 2.5rem 2rem;
+    }
+
+    .footer {
+        padding: 5rem 1.5rem 2.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .footer-input {
+        min-width: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .nav-links {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .desktop-only {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 3.75rem;
+        gap: 2rem;
+    }
+
+    .hero-image {
+        max-width: 80rem;
+        height: 65vh;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+    }
+}
