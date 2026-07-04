@@ -1,19 +1,37 @@
-const hamBtn = document.getElementById("mobile-menu-open-btn");
-const mobileMenu = document.querySelector(".mobile-nav-menu");
-const closeBtn = document.querySelector(".mobile-menu-close-btn");
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenuIcon = document.getElementById("mobile-menu-icon");
 
-hamBtn.addEventListener("click", function () {
-  hamBtn.classList.remove("active");
-  hamBtn.classList.add("inactive");
+if (mobileMenuBtn && mobileMenu && mobileMenuIcon) {
+  mobileMenuBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    mobileMenuBtn.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-open", isOpen);
 
-  mobileMenu.classList.remove("inactive");
-  mobileMenu.classList.add("active");
-});
+    mobileMenuIcon.src = isOpen
+      ? "./img/svg/close-svgrepo-com.svg"
+      : "./img/svg/hamburger-menu-svgrepo-com.svg";
 
-closeBtn.addEventListener("click", function () {
-  hamBtn.classList.remove("inactive");
-  hamBtn.classList.add("active");
+    mobileMenuIcon.alt = isOpen ? "Close menu" : "Open menu";
+  });
 
-  mobileMenu.classList.remove("active");
-  mobileMenu.classList.add("inactive");
-});
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("is-open");
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+      mobileMenuIcon.src = "./img/svg/hamburger-menu-svgrepo-com.svg";
+      mobileMenuIcon.alt = "Open menu";
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1023) {
+      mobileMenu.classList.remove("is-open");
+      mobileMenuBtn.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+      mobileMenuIcon.src = "./img/svg/hamburger-menu-svgrepo-com.svg";
+      mobileMenuIcon.alt = "Open menu";
+    }
+  });
+}

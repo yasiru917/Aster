@@ -17,134 +17,263 @@ body {
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: max-content;
-    max-width: 1440px;
+.navbar {
     width: 100%;
-    padding: 20px 10px 20px 10px;
-    background-color: #ffffff;
-    box-shadow:
-        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-
-.desktop-nav {
+    padding: 1.5rem 2rem;
     display: flex;
-    flex-direction: row;
-    width: 400px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px 0px 20px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 
-.desktop-nav>a {
+.nav-links {
     display: flex;
-    flex-direction: row;
+    gap: 2rem;
+
+    font-size: 0.89rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+}
+
+.nav-link {
+    display: flex;
     align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
-.desktop-nav>a:hover {
-    color: grey;
-    transform: translate(1px, -1px);
-    transition: all 0.3s ease-in;
+.nav-arrow {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.25rem;
+
+    color: #9ca3af;
+
+    transition: color .3s;
 }
 
-/* Mobile menu styles */
-button {
-    background: none;
+.nav-link:hover .nav-arrow {
+    color: #000;
+}
+
+.mobile-menu-btn {
+
+    display: none;
+
+    padding: 0.25rem;
+    color: #4b5563;
+
+    background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
+
+    position: relative;
+    z-index: 60;
+}
+
+.mobile-menu-btn img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu-btn:focus {
+    outline: none;
+}
+
+.menu-icon,
+.close-icon {
+
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.menu-icon {
+    display: block;
+}
+
+.close-icon {
+    display: none;
+}
+
+.logo-container {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 60;
+}
+
+.logo {
+
+    font-size: 1.875rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+
+    text-decoration: none;
+    color: inherit;
+
+    font-family: sans-serif;
+}
+
+.nav-icons {
+
+    display: flex;
+    gap: 1.5rem;
+
+    font-size: 0.875rem;
+    font-weight: 300;
+
+    position: relative;
+    z-index: 60;
+}
+
+.nav-icon {
+
     display: flex;
     align-items: center;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: color .3s;
+}
+
+.nav-icon:hover {
+    color: #4b5563;
+}
+
+.icon {
+
+    width: 1rem;
+    height: 1rem;
+
+    margin-right: .5rem;
+}
+
+.cart-count {
+
+    margin-left: .25rem;
+
+    width: 1rem;
+    height: 1rem;
+
+    display: flex;
     justify-content: center;
-    -webkit-tap-highlight-color: transparent;
+    align-items: center;
+
+    border-radius: 9999px;
+
+    background: #000;
+    color: #fff;
+
+    font-size: .75rem;
 }
 
-.mobile-menu-open-btn {
-    transition: opacity 0.2s ease;
-}
+.mobile-menu {
 
-.mobile-menu-open-btn:active {
-    opacity: 0.6;
-}
-
-.mobile-nav-menu {
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    max-width: 400px;
-    height: 100vh;
-    background-color: #ffffff;
-    z-index: 9999;
+    inset: 0;
+
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    overflow-y: auto;
+
+    padding: 6rem 2rem 2rem;
+
+    background: #fff;
+
+    z-index: 55;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity .3s;
 }
 
-.mobile-menu-close-btn {
-    align-self: flex-end;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: #f9f9f9;
-    transition: background-color 0.2s ease;
+.mobile-menu.is-open {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.mobile-menu-close-btn:active {
-    background-color: #eaeaea;
+body.menu-open {
+    overflow: hidden;
 }
 
-.search-bar-container {
+.mobile-menu-links {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: 3rem;
+
+    font-size: 1.875rem;
+    letter-spacing: .025em;
+}
+
+.mobile-menu-links a {
+
+    text-decoration: none;
+    color: inherit;
+
+    transition: color .3s;
+}
+
+.mobile-menu-links a:hover {
+    color: #4b5563;
+}
+
+.mobile-menu-icons {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid #e5e7eb;
+
+    font-size: .875rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+
+    font-weight: 300;
+}
+
+.mobile-menu-icons a {
+
     display: flex;
     align-items: center;
-    background-color: #f3f4f6;
-    border-radius: 9999px;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 2.5rem;
-}
 
-.search-text-container {
-    flex-grow: 1;
-    border: none;
-    background: transparent;
-    font-size: 1rem;
-    color: #111827;
-    outline: none;
-    width: 100%;
-}
-
-.search-text-container::placeholder {
-    color: #9ca3af;
-}
-
-.search-bar-icon {
-    opacity: 0.5;
-    margin-left: 0.5rem;
-}
-
-.nav-links-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2rem;
-    column-gap: 1rem;
-}
-
-.nav-links-grid a {
     text-decoration: none;
-    color: #374151;
-    font-size: 1.125rem;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    transition: color 0.2s ease, transform 0.2s ease;
+    color: inherit;
+
+    transition: color .3s;
 }
 
+.mobile-menu-icons a:hover {
+    color: #4b5563;
+}
+
+.mobile-menu-icons svg {
+
+    width: 1rem;
+    height: 1rem;
+
+    margin-right: .75rem;
+}
 
 .active {
     display: block;
@@ -805,9 +934,20 @@ button {
 /* Tablet, mobile */
 @media (max-width: 1023px) {
 
-    .desktop-nav,
-    .brand-logo {
+    .nav-links {
         display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
     }
 
     .collection {
@@ -901,9 +1041,20 @@ button {
 
 @media (min-width: 1024px) {
 
-    .mobile-nav-menu,
-    .mobile-menu-open-btn {
-        display: none !important;
+    .nav-links {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    .desktop-only {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
     }
 
     .hero-title {
