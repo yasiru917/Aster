@@ -378,11 +378,9 @@ body.menu-open {
 
 .about-quote {
     margin-bottom: 1.5rem;
-
     font-family: "Playfair Display", serif;
     font-size: 1.25rem;
     line-height: 1.75;
-
     color: #1a1a1a;
 }
 
@@ -390,7 +388,7 @@ body.menu-open {
     font-size: 1rem;
     line-height: 1.75;
     font-weight: 300;
-
+    margin-bottom: 1rem;
     color: #4b5563;
 }
 
@@ -459,19 +457,13 @@ body.menu-open {
 
 .text-link {
     display: inline-block;
-
     padding-bottom: .25rem;
-
     border-bottom: 1px solid #1a1a1a;
-
     font-size: .875rem;
-
     text-transform: uppercase;
-    letter-spacing: .2em;
-
+    letter-spacing: 0.2em;
     color: #1a1a1a;
     text-decoration: none;
-
     transition: .3s;
 }
 
@@ -483,16 +475,13 @@ body.menu-open {
 .craft-image-wrapper {
     width: 50%;
     min-height: 400px;
-
     overflow: hidden;
 }
 
 .craft-image {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     transition: transform 2s;
 }
 
@@ -534,16 +523,12 @@ body.menu-open {
 .pillar-icon {
     width: 4rem;
     height: 4rem;
-
     margin: 0 auto 1.5rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: #f4f2ef;
     border-radius: 50%;
-
     color: #1a1a1a;
 }
 
@@ -554,10 +539,8 @@ body.menu-open {
 
 .pillar-title {
     margin-bottom: .75rem;
-
     font-family: "Playfair Display", serif;
     font-size: 1.25rem;
-
     color: #1a1a1a;
 }
 
@@ -565,13 +548,11 @@ body.menu-open {
     font-size: .875rem;
     font-weight: 300;
     line-height: 1.75;
-
     color: #6b7280;
 }
 
 .footer {
     padding: 5rem 2rem 2.5rem;
-
     background: #1a1a1a;
     color: #fff;
 }
@@ -579,7 +560,6 @@ body.menu-open {
 .footer-container {
     max-width: 80rem;
     margin: 0 auto 4rem;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
@@ -587,21 +567,16 @@ body.menu-open {
 
 .footer-logo {
     margin-bottom: 1.5rem;
-
     font-size: 1.5rem;
     font-weight: 700;
-
     text-transform: uppercase;
     letter-spacing: -.05em;
-
     font-family: "Work Sans", sans-serif;
 }
 
 .footer-description {
     max-width: 16rem;
-
     color: #9ca3af;
-
     font-size: .875rem;
     font-weight: 300;
     line-height: 1.8;
@@ -609,10 +584,8 @@ body.menu-open {
 
 .footer-heading {
     margin-bottom: 1.5rem;
-
     font-size: .75rem;
     font-weight: 600;
-
     text-transform: uppercase;
     letter-spacing: .2em;
 }
@@ -628,10 +601,8 @@ body.menu-open {
 .footer-links a {
     color: #9ca3af;
     text-decoration: none;
-
     font-size: .875rem;
     font-weight: 300;
-
     transition: color .3s;
 }
 
@@ -641,9 +612,7 @@ body.menu-open {
 
 .newsletter-text {
     margin-bottom: 1rem;
-
     color: #9ca3af;
-
     font-size: .875rem;
     font-weight: 300;
     line-height: 1.8;
@@ -652,21 +621,16 @@ body.menu-open {
 .newsletter-form {
     display: flex;
     align-items: center;
-
     padding-bottom: .5rem;
-
     border-bottom: 1px solid #4b5563;
 }
 
 .newsletter-input {
     flex: 1;
-
     border: none;
     outline: none;
     background: transparent;
-
     color: #fff;
-
     font-size: .875rem;
     font-weight: 300;
 }
@@ -678,17 +642,12 @@ body.menu-open {
 .newsletter-btn {
     border: none;
     background: transparent;
-
     color: #fff;
-
     cursor: pointer;
-
     font-size: .75rem;
     font-weight: 600;
-
     text-transform: uppercase;
     letter-spacing: .1em;
-
     transition: color .3s;
 }
 
@@ -699,17 +658,12 @@ body.menu-open {
 .footer-bottom {
     max-width: 80rem;
     margin: 0 auto;
-
     padding-top: 2rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     border-top: 1px solid #1f2937;
-
     color: #6b7280;
-
     font-size: .75rem;
     font-weight: 300;
 }
@@ -722,7 +676,6 @@ body.menu-open {
 .social-links a {
     color: inherit;
     text-decoration: none;
-
     transition: color .3s;
 }
 
