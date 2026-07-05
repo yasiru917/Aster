@@ -190,7 +190,7 @@ body {
     flex-direction: column;
 
     padding: 6rem 2rem 2rem;
-
+    font-family: "Playfair Display", serif;
     background: #fff;
 
     z-index: 55;
